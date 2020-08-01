@@ -1,8 +1,10 @@
 import GameSavingLoader from './gsloader'
 
-GameSavingLoader.load().then((saving) => {
+GameSavingLoader.load().then(() => {
     // saving объект класса GameSaving
-    
+  console.log(GameSavingLoader)
+
   }, (error) => {
-      error = new Error('Эррор!')
+    console.error(error)
   });
+

@@ -8,6 +8,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.bundle.js'
   },
+  devServer: {
+    port: 4200
+  },
   module: {
     rules: [
       {
